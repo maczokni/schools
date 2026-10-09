@@ -1,0 +1,30 @@
+# ---- R / RStudio ----
+.Rproj.user/
+*.Rproj
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+
+# ---- OS ----
+.DS_Store
+
+# ---- Archive of old scripts / superseded files ----
+_archive/
+
+# ---- Data ----
+# Raw DfE / GIAS downloads are large (one is >100 MB, over GitHub's limit) and
+# publicly available - see README for sources. Only small lookups and the
+# derived admissions table are tracked.
+data/*
+!data/manchester_primary_school_places.csv
+!data/EnglishLaNameCodes.csv
+!data/TfGMMetroRailStops.csv
+!data/data_dictionaries/
+data/data_dictionaries/.DS_Store
+
+# ---- Map widget support folders (if saved without pandoc) ----
+outputs/maps/*_files/
+
+# Shortlist map shows distance-from-home for every school (could reveal home location)
+outputs/maps/schools_to_look_at.html
